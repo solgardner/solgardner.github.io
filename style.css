@@ -1,11 +1,4 @@
-/* Ensure the entire page uses the full height */
-html, body {
-    height: 100%; /* Full viewport height */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
+/* styles.css */
 
 /* Navbar and Footer Styling */
 nav {
@@ -16,9 +9,18 @@ footer.page-footer {
     margin-top: auto; /* Push footer to the bottom */
 }
 
-/* Make the main container fill the remaining space */
+/* Ensure the entire page uses the full height */
+html, body {
+    height: 100%; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* The container that wraps all content (e.g., carousel) */
 .container {
-    flex: 1; /* Allow the container to stretch */
+    flex: 1; /* Makes this container take up the remaining space */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,23 +29,42 @@ footer.page-footer {
 
 /* Carousel Styling */
 .carousel {
-    height: 70vh; /* Adjust the height to make it proportional */
+    height: 80vh; /* Adjust height for better utilization */
     width: 100%; /* Full width */
+    margin: 0 auto;
+    display: flex; /* Align content within carousel */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Ensure carousel items are centered and fill space */
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Make the item fill the carousel height */
+}
+
+/* Style images inside the carousel */
+.carousel img {
+    max-height: 100%; /* Ensure images don't exceed carousel height */
+    max-width: 100%; /* Ensure images don't exceed carousel width */
+    object-fit: cover; /* Ensure proper scaling and cropping */
     margin: 0 auto;
 }
 
-/* Ensure carousel images are centered and fill space */
-.carousel img {
-    height: 100%; /* Cover the full height of the carousel */
-    width: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image scales properly */
-    margin: 0 auto;
+/* Style carousel captions */
+.carousel h5 {
+    margin-top: 20px;
+    color: #333; /* Adjust color for better readability */
+    font-size: 1.5rem; /* Adjust font size */
 }
 
 /* Navigation Arrows Styling */
 .prev-arrow, .next-arrow {
     position: absolute;
-    top: 50%; /* Vertically center the arrows */
+    top: 50%; /* Vertically center */
     transform: translateY(-50%);
     font-size: 36px;
     color: black;
@@ -54,28 +75,15 @@ footer.page-footer {
 }
 
 .prev-arrow {
-    left: 20px; /* Position arrow on the left */
+    left: 20px; /* Adjust position on the left */
 }
 
 .next-arrow {
-    right: 20px; /* Position arrow on the right */
+    right: 20px; /* Adjust position on the right */
 }
 
 .prev-arrow:hover, .next-arrow:hover {
-    color: #666; /* Darken color on hover */
-}
-
-/* Style carousel captions */
-.carousel h5 {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
+    color: #666; /* Slightly darker color on hover */
 }
 
 /* Arrows for Carousel Controls */
@@ -87,7 +95,7 @@ footer.page-footer {
     width: 100%;
 }
 
-/.carousel-arrows a {
+.carousel-arrows a {
     color: black;
     font-size: 36px;
     cursor: pointer;
