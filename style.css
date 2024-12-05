@@ -16,22 +16,23 @@ footer.page-footer{
 }
 
 .carousel-arrows a {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 10px;
-    color: white;
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    color: black; /* Set arrow color to black */
     text-align: center;
     cursor: pointer;
     text-decoration: none;
 }
 
 .carousel-arrows a:hover {
-    background: rgba(0, 0, 0, 0.8);
+    color: #555; /* Optional: Slightly lighter color on hover */
 }
 
 .material-icons {
-    font-size: 36px;
+    font-size: 36px; /* Keep icon size consistent */
 }
+
 
 .btn, .btn-small, .btn-large {
     background-color: #cccccc !important; /* Light gray */
