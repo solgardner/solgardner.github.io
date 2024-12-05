@@ -44,3 +44,25 @@ footer.page-footer{
     background-color: #b3b3b3 !important; /* Slightly darker gray on hover */
     color: #ffffff !important; /* White text on hover for better contrast */
 }
+/* Ensure the entire page uses the full height */
+html, body {
+    height: 100%; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* The container that wraps all content (e.g., carousel) */
+.container {
+    flex: 1; /* Makes this container take up the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer at the bottom of the page */
+footer.page-footer {
+    margin-top: auto; /* Push footer to the bottom */
+}
