@@ -12,6 +12,7 @@ footer.page-footer{
     top: -200px; /* Adjust based on carousel height */
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .carousel-arrows a {
@@ -21,6 +22,7 @@ footer.page-footer{
     color: white;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .carousel-arrows a:hover {
@@ -30,6 +32,7 @@ footer.page-footer{
 .material-icons {
     font-size: 36px;
 }
+
 .btn, .btn-small, .btn-large {
     background-color: #cccccc !important; /* Light gray */
     color: #000000 !important; /* Black text for better contrast */
