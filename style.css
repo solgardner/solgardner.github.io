@@ -1,5 +1,5 @@
 /* styles.css */
 /* Custom CSS for navbar color */
-nav {
+nav,page-footer {
     background-color: #CC0000 !important; 
 }
