@@ -1,31 +1,145 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Ali Chaghani" />
-    <title>Ali Chaghani</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <title>Personal Portfolio</title>
 
     <!-- Link to Materialize CSS (CDN) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
+
+    <!-- Link to custom CSS -->
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper center">
-                <a href="index.html" class="brand-logo">Name</a>
-                <ul class="left hide-on-med-and-down">
-                    <li><a href="sass.html">Resume</a></li>
-                    <li><a href="badges.html">Projects</a></li>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Your Name</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
-    <h1>Hello World!</h1>
+    <!-- Hero Section -->
+    <div class="section no-pad-bot" id="hero">
+        <div class="container">
+            <h1 class="header center">Welcome to My Portfolio</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Showcasing my skills, projects, and passion</h5>
+            </div>
+            <div class="row center">
+                <a href="#about" class="btn-large waves-effect waves-light">Learn More About Me</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="section" id="about">
+        <div class="container">
+            <h2 class="center">About Me</h2>
+            <p class="light">I am a [your profession or passion], passionate about [your interests]. With experience in [your skills], I have worked on projects that [highlight your achievements]. In my free time, I enjoy [your hobbies].</p>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section grey lighten-3" id="projects">
+        <div class="container">
+            <h2 class="center">Projects</h2>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="project1.jpg" alt="Project 1">
+                            <span class="card-title">Project 1</span>
+                        </div>
+                        <div class="card-content">
+                            <p>A brief description of Project 1 and its impact or goals.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="project2.jpg" alt="Project 2">
+                            <span class="card-title">Project 2</span>
+                        </div>
+                        <div class="card-content">
+                            <p>A brief description of Project 2 and its impact or goals.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="project3.jpg" alt="Project 3">
+                            <span class="card-title">Project 3</span>
+                        </div>
+                        <div class="card-content">
+                            <p>A brief description of Project 3 and its impact or goals.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section" id="contact">
+        <div class="container">
+            <h2 class="center">Contact Me</h2>
+            <form>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="name" type="text" class="validate">
+                        <label for="name">Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                </div>
+                <div class="row center">
+                    <button class="btn waves-effect waves-light" type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h5 class="white-text">Your Name</h5>
+                    <p class="grey-text text-lighten-4">Thank you for visiting my portfolio!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Include jQuery (Required by Materialize) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -34,5 +148,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
-
-
