@@ -1,35 +1,33 @@
 // Initialize the carousel
 document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, {
+    const elems = document.querySelectorAll('.carousel');
+    const instances = M.Carousel.init(elems, {
         fullWidth: true, // Enables full-width carousel
         indicators: true // Shows the small dots below
     });
 
-    // Ensure carousel initializes properly after page content has fully loaded
-    window.addEventListener('load', function () {
-        instances.forEach(function (instance) {
-            instance.set(); // Recalculate carousel layout if necessary
-        });
-    });
-
-    // Add click events for arrows
-    const carousel = instances[0]; // Assuming only one carousel on the page
+    // Safely handle navigation arrows
+    const prevArrow = document.querySelector('.prev-arrow');
+    const nextArrow = document.querySelector('.next-arrow');
+    const carousel = instances.length > 0 ? instances[0] : null;
 
     if (carousel) {
-        const prevArrow = document.querySelector('.prev-arrow');
-        const nextArrow = document.querySelector('.next-arrow');
-
         if (prevArrow) {
-            prevArrow.addEventListener('click', function () {
-                carousel.prev();
-            });
+            prevArrow.addEventListener('click', () => carousel.prev());
         }
-
         if (nextArrow) {
-            nextArrow.addEventListener('click', function () {
-                carousel.next();
-            });
+            nextArrow.addEventListener('click', () => carousel.next());
         }
     }
 });
+
+// Ensure proper rendering of carousel on first load
+window.onload = function () {
+    const elems = document.querySelectorAll('.carousel');
+    elems.forEach(elem => {
+        const instance = M.Carousel.getInstance(elem);
+        if (instance) {
+            instance.set(); // Ensure the carousel layout is correctly recalculated
+        }
+    });
+};
