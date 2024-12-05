@@ -31,7 +31,7 @@
     <div class="section grey lighten-3" id="projects">
         <div class="container">
             <h2 class="center">Projects</h2>
-            <div class="carousel">
+            <div class="carousel carousel-slider">
                 <!-- Project 1 -->
                 <div class="carousel-item">
                     <img src="project1.jpg" alt="Project 1">
@@ -81,16 +81,9 @@
     <!-- Include Materialize JS (CDN) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script>
-        // Initialize the carousel
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.carousel');
-            M.Carousel.init(elems, {
-                fullWidth: true,
-                indicators: true
-            });
-        });
-    </script>
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
+
 
