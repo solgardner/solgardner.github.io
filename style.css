@@ -1,49 +1,3 @@
-/* styles.css */
-/* Custom CSS for navbar color */
-nav {
-    background-color: #CC0000 !important; 
-}
-footer.page-footer{
-        background-color: #CC0000 !important; 
-}
-
-.carousel-arrows {
-    position: relative;
-    top: -200px; /* Adjust based on carousel height */
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.carousel-arrows a {
-    background: none; /* Remove background color */
-    border: none; /* Remove border */
-    padding: 0; /* Remove padding */
-    color: black; /* Set arrow color to black */
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.carousel-arrows a:hover {
-    color: #555; /* Optional: Slightly lighter color on hover */
-}
-
-.material-icons {
-    font-size: 36px; /* Keep icon size consistent */
-}
-
-
-.btn, .btn-small, .btn-large {
-    background-color: #cccccc !important; /* Light gray */
-    color: #000000 !important; /* Black text for better contrast */
-}
-
-/* Button hover effect */
-.btn:hover, .btn-small:hover, .btn-large:hover {
-    background-color: #b3b3b3 !important; /* Slightly darker gray on hover */
-    color: #ffffff !important; /* White text on hover for better contrast */
-}
 /* Ensure the entire page uses the full height */
 html, body {
     height: 100%; /* Full viewport height */
@@ -53,36 +7,40 @@ html, body {
     flex-direction: column;
 }
 
-/* The container that wraps all content (e.g., carousel) */
+/* Navbar and Footer Styling */
+nav {
+    background-color: #CC0000 !important; 
+}
+footer.page-footer {
+    background-color: #CC0000 !important; 
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Make the main container fill the remaining space */
 .container {
-    flex: 1; /* Makes this container take up the remaining space */
+    flex: 1; /* Allow the container to stretch */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* Footer at the bottom of the page */
-footer.page-footer {
-    margin-top: auto; /* Push footer to the bottom */
-}
-
-/* Make carousel occupy the full container */
+/* Carousel Styling */
 .carousel {
-    height: 70vh; /* Adjust the height to suit your layout */
-    width: 100%; /* Ensure it stretches to the full width */
+    height: 70vh; /* Adjust the height to make it proportional */
+    width: 100%; /* Full width */
     margin: 0 auto;
 }
 
-/* Center images inside the carousel */
+/* Ensure carousel images are centered and fill space */
 .carousel img {
-    height: 100%; /* Ensures images cover the height */
+    height: 100%; /* Cover the full height of the carousel */
     width: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures consistent cropping */
-    margin: 0 auto; /* Center align the image */
+    object-fit: cover; /* Ensure the image scales properly */
+    margin: 0 auto;
 }
 
-/* Center the navigation arrows */
+/* Navigation Arrows Styling */
 .prev-arrow, .next-arrow {
     position: absolute;
     top: 50%; /* Vertically center the arrows */
@@ -96,15 +54,15 @@ footer.page-footer {
 }
 
 .prev-arrow {
-    left: 20px; /* Position on the left */
+    left: 20px; /* Position arrow on the left */
 }
 
 .next-arrow {
-    right: 20px; /* Position on the right */
+    right: 20px; /* Position arrow on the right */
 }
 
 .prev-arrow:hover, .next-arrow:hover {
-    color: #666; /* Darken color slightly on hover */
+    color: #666; /* Darken color on hover */
 }
 
 /* Style carousel captions */
@@ -120,3 +78,35 @@ footer.page-footer {
     font-size: 18px;
 }
 
+/* Arrows for Carousel Controls */
+.carousel-arrows {
+    position: relative;
+    top: -200px; /* Adjust as needed */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/.carousel-arrows a {
+    color: black;
+    font-size: 36px;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+.carousel-arrows a:hover {
+    color: #555;
+}
+
+/* Button Styling */
+.btn, .btn-small, .btn-large {
+    background-color: #cccccc !important; /* Light gray */
+    color: #000000 !important; /* Black text for better contrast */
+}
+
+.btn:hover, .btn-small:hover, .btn-large:hover {
+    background-color: #b3b3b3 !important; /* Slightly darker gray on hover */
+    color: #ffffff !important; /* White text on hover for better contrast */
+}
