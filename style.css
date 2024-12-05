@@ -7,3 +7,36 @@ footer.page-footer{
         background-color: #CC0000 !important; 
 }
 
+.carousel-arrows {
+    position: relative;
+    top: -200px; /* Adjust based on carousel height */
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-arrows a {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.carousel-arrows a:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.material-icons {
+    font-size: 36px;
+}
+.btn, .btn-small, .btn-large {
+    background-color: #cccccc !important; /* Light gray */
+    color: #000000 !important; /* Black text for better contrast */
+}
+
+/* Button hover effect */
+.btn:hover, .btn-small:hover, .btn-large:hover {
+    background-color: #b3b3b3 !important; /* Slightly darker gray on hover */
+    color: #ffffff !important; /* White text on hover for better contrast */
+}
