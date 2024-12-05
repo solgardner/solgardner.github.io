@@ -66,3 +66,57 @@ html, body {
 footer.page-footer {
     margin-top: auto; /* Push footer to the bottom */
 }
+
+/* Make carousel occupy the full container */
+.carousel {
+    height: 70vh; /* Adjust the height to suit your layout */
+    width: 100%; /* Ensure it stretches to the full width */
+    margin: 0 auto;
+}
+
+/* Center images inside the carousel */
+.carousel img {
+    height: 100%; /* Ensures images cover the height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures consistent cropping */
+    margin: 0 auto; /* Center align the image */
+}
+
+/* Center the navigation arrows */
+.prev-arrow, .next-arrow {
+    position: absolute;
+    top: 50%; /* Vertically center the arrows */
+    transform: translateY(-50%);
+    font-size: 36px;
+    color: black;
+    cursor: pointer;
+    background: none; /* Remove background */
+    border: none;
+    z-index: 1000;
+}
+
+.prev-arrow {
+    left: 20px; /* Position on the left */
+}
+
+.next-arrow {
+    right: 20px; /* Position on the right */
+}
+
+.prev-arrow:hover, .next-arrow:hover {
+    color: #666; /* Darken color slightly on hover */
+}
+
+/* Style carousel captions */
+.carousel h5 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
