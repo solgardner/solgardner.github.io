@@ -1,6 +1,7 @@
 /* Ensure the entire page uses the full height */
 html, body {
-    height: 100%; /* Full viewport height */
+    height: 100%;
+    background-color: #C8D2D1; /* Full viewport height */
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,13 +10,17 @@ html, body {
 
 /* Navbar and Footer Styling */
 nav {
-    background-color: #CC0000 !important; 
+    background-color: #EE9B01 !important; 
 }
 
 footer.page-footer {
-    background-color: #CC0000 !important; 
+    background-color: #DA6A00 !important; 
     margin-top: auto; /* Push footer to the bottom */
-    color: white;
+    color: white; 
+}
+
+.brand-logo {
+    color: #C8D2D1 !important;
 }
 
 /* Main container layout */
@@ -122,5 +127,16 @@ footer.page-footer {
 
 .carousel .indicators .indicator-item.active {
     background-color: black; /* Active dot color */
+}
+
+.mail-link {
+    color: #14471E;
+}
+
+.fa-github {
+    color: #14471E;
+}
+.github-link {
+    color: #14471E;
 }
 
